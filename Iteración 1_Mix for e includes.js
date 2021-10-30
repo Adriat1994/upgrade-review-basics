@@ -7,9 +7,9 @@ const movies = [
 
 let categoriasFiltradas = [];
 
-for (let categorias of movies) {
+for (let movie of movies) {         //Con este bucle, vamos a sacar cada película dentro de movies y sus propiedades
 
-    categorias.categories.forEach(element => {
+    movie.categories.forEach(element => {       //Para acceder a los elementos individuales de cada pelicula, hay que hacer otro bucle dentro de nuestro bucle
         
         if (!categoriasFiltradas.includes(element)) {
             categoriasFiltradas.push(element);           
